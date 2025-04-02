@@ -1,2 +1,3 @@
-# CMSC 22000 Homework 
-FREDRIC NGO (fredricngo)
+# CMSC 22000 Homework
+
+Fredric Ngo (fredricngo)
