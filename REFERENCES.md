@@ -1,0 +1,1 @@
+Used Github CoPilot for general reference purposes (i.e, how to display a certain page depending on whether a user is logged in or not)
