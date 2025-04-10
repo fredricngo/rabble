@@ -1,0 +1,16 @@
+{% extends "rabble/base.html" %}
+
+{% block content %}
+<p>
+   Profile: {{user.username}}<br>
+   E-mail Address:
+   {% if user.email%}
+        {{user.email}}<br>
+    {% else %}
+        <em>No Email Address Provided</em><br>
+        {% endif %}
+</p>
+<p>
+    <a href="/">Index</a>
+</p>
+{% endblock content %}
