@@ -101,8 +101,6 @@ class Privilege(models.Model):
 
 
 class Comment(models.Model):
-    #note on the use of related_name: copilots suggestion that taught me about reverse relationships and accessing related objects
-    #related_name allows us to access the related objects in a more intuitive way
     body = models.TextField()
     publisher = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE,)
