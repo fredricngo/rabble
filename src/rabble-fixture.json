@@ -1,0 +1,237 @@
+[
+{
+  "model": "rabble.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$AQiaKFVTtHeIJBwbsKkQ30$dCmPmJbCzGVIPLd9T+qol9CNktdLWG539QtymKkx09o=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "sam",
+    "first_name": "",
+    "last_name": "",
+    "email": "sam@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-04-21T17:39:49.378Z",
+    "biography": "",
+    "profile_picture": "",
+    "interests": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "rabble.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$h1jN9brGOWMpbMce82w8SB$9r630Rflu1QtDAowFk0GbqzGYzL+IH9pb79D/FcNBqM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "alex",
+    "first_name": "",
+    "last_name": "",
+    "email": "alex@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-04-21T17:40:01.680Z",
+    "biography": "",
+    "profile_picture": "",
+    "interests": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "rabble.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$fPLu7MwUUL18FHYlEyqgRa$J544LUknkkhJJTyy/fgg3NGxz3iRrWJxcKUKpE9SrzY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "chris",
+    "first_name": "",
+    "last_name": "",
+    "email": "chris@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-04-21T17:40:13.085Z",
+    "biography": "",
+    "profile_picture": "",
+    "interests": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "rabble.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$gHdoNvJm1owI595n4GKSAa$ew/s1BDvkBcv2jsCyPdC/soHw4t0HvVXJU9MHXDSdkw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "morgan",
+    "first_name": "",
+    "last_name": "",
+    "email": "morgan@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-04-21T17:40:25.219Z",
+    "biography": "",
+    "profile_picture": "",
+    "interests": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "rabble.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$KNVvto7mhPs2wQytXuSRqG$8T5zY5rgxtjFKY0bbLYdzZQ3z/CluiegmK5NiVmzSi8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "drew",
+    "first_name": "",
+    "last_name": "",
+    "email": "drew@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-04-21T17:40:38.384Z",
+    "biography": "",
+    "profile_picture": "",
+    "interests": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "rabble.community",
+  "pk": 1,
+  "fields": {
+    "community_name": "default"
+  }
+},
+{
+  "model": "rabble.subrabble",
+  "pk": 1,
+  "fields": {
+    "subrabble_name": "cs-courses",
+    "community_id": 1,
+    "description": "",
+    "is_private": false
+  }
+},
+{
+  "model": "rabble.subrabble",
+  "pk": 2,
+  "fields": {
+    "subrabble_name": "python",
+    "community_id": 1,
+    "description": "",
+    "is_private": false
+  }
+},
+{
+  "model": "rabble.subrabble",
+  "pk": 3,
+  "fields": {
+    "subrabble_name": "web-dev",
+    "community_id": 1,
+    "description": "",
+    "is_private": false
+  }
+},
+{
+  "model": "rabble.post",
+  "pk": 1,
+  "fields": {
+    "post_title": "dedotaded_wam",
+    "post_body": "What's the wecommended amount of dedotated wam I should have to a survr ?",
+    "comment_count": 0,
+    "author": 8,
+    "like_count": 0,
+    "timestamp": "2025-04-21T17:52:00.287Z",
+    "is_anon": false,
+    "subrabble_id": 1
+  }
+},
+{
+  "model": "rabble.post",
+  "pk": 2,
+  "fields": {
+    "post_title": "steve's lava chicken",
+    "post_body": "La-la-la-lava ch-ch-ch-chicken Steve's Lava Chicken, yeah, it's tasty as hell Ooh, mamacita, now you're ringin' the bell Crispy and juicy, now you're havin' a snack Ooh, super spicy, it's a lava attack",
+    "comment_count": 3,
+    "author": 8,
+    "like_count": 0,
+    "timestamp": "2025-04-21T17:53:36.508Z",
+    "is_anon": false,
+    "subrabble_id": 1
+  }
+},
+{
+  "model": "rabble.post",
+  "pk": 3,
+  "fields": {
+    "post_title": "chicken jockey",
+    "post_body": "CHICKEN JOCKEY",
+    "comment_count": 0,
+    "author": 8,
+    "like_count": 0,
+    "timestamp": "2025-04-21T17:54:05.213Z",
+    "is_anon": false,
+    "subrabble_id": 1
+  }
+},
+{
+  "model": "rabble.privilege",
+  "pk": 1,
+  "fields": {
+    "user_id": 7,
+    "community_id": 1,
+    "privilege_type": "Owner"
+  }
+},
+{
+  "model": "rabble.comment",
+  "pk": 1,
+  "fields": {
+    "body": "hahah that's awesome",
+    "publisher": 7,
+    "post": 2,
+    "username": "sam",
+    "like_count": 0,
+    "comment_count": 0,
+    "timestamp": "2025-04-21T17:55:58.451Z",
+    "is_anon": false
+  }
+},
+{
+  "model": "rabble.comment",
+  "pk": 2,
+  "fields": {
+    "body": "this guy's trolling",
+    "publisher": 7,
+    "post": 2,
+    "username": "sam",
+    "like_count": 0,
+    "comment_count": 0,
+    "timestamp": "2025-04-23T20:47:27.127Z",
+    "is_anon": false
+  }
+},
+{
+  "model": "rabble.comment",
+  "pk": 3,
+  "fields": {
+    "body": "chicken jockey",
+    "publisher": 10,
+    "post": 2,
+    "username": "morgan",
+    "like_count": 0,
+    "comment_count": 0,
+    "timestamp": "2025-04-23T20:48:04.124Z",
+    "is_anon": false
+  }
+}
+]

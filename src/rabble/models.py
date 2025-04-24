@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
 
 #To Implement: 
 #1. User model -- DONE
@@ -112,7 +114,20 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment by {self.username} on Post {self.post.id}"
-    
+
+#we will use signals to update the comment count of the post whenever a comment is created 
+@receiver(post_save, sender=Comment)
+def update_post_comment_count_on_create(sender, instance, created, **kwargs):
+    #this will be called whenever a comment is created 
+    if created: 
+        instance.post.comment_count += 1
+        instance.post.save()
+
+@receiver(post_delete, sender=Comment)
+def update_post_comment_count_on_delete(sender, instance, **kwargs): 
+    #called whenever a comment is deleted 
+    instance.post.comment_count -= 1 
+    instance.post.save()
 
 class CommentThread(models.Model):
     original = models.ForeignKey(Comment, on_delete=models.CASCADE, related_name='original_comment')
