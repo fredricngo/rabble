@@ -44,7 +44,7 @@ def post_create(request, identifier):
             post.author = request.user
             post.subrabble_id = subrabble
             post.save()
-            return redirect('post-detail', identifier=subrabble.subrabble_name, pk=post.pk)
+            return redirect('post_detail', identifier=subrabble.subrabble_name, pk=post.pk)
     else:
         form = PostForm()
     
@@ -63,7 +63,7 @@ def post_edit(request, identifier, pk):
         if form.is_valid():
             form.save()
             context = {'post': post, 'subrabble': subrabble}
-            return redirect(request, "rabble/post-detail.html", context)
+            return redirect(request, "rabble/post_detail.html", context)
     else:
         form = PostForm(instance=post)
     
