@@ -41,3 +41,13 @@ class FollowLog(models.Model):
 without the related_name parameters, Django wouldn't know how to differentiate between follower and followed. 
 
 I also asked CoPilot to explain the steps I should take to register my models so that they show up on the admin site. 
+
+
+
+
+
+
+HOMEWORK #4: 
+I implemented the first two endpoints (without the generic views) without assistance
+from AI, then asked CoPilot for some help on what views I should use when implementing 
+the last two endpoints.
