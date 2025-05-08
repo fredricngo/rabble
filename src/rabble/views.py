@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from .models import Post, Community, SubRabble
 from .forms import PostForm
@@ -34,6 +35,7 @@ def post_detail(request, identifier, pk):
     }
     return render(request, "rabble/post-detail.html", context)
 
+@login_required
 def post_create(request, identifier):
     subrabble = get_object_or_404(SubRabble, subrabble_name=identifier)
     
@@ -44,7 +46,7 @@ def post_create(request, identifier):
             post.author = request.user
             post.subrabble_id = subrabble
             post.save()
-            return redirect('post_detail', identifier=subrabble.subrabble_name, pk=post.pk)
+            return redirect('post-detail', identifier=subrabble.subrabble_name, pk=post.pk)
     else:
         form = PostForm()
     
@@ -62,8 +64,7 @@ def post_edit(request, identifier, pk):
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
             form.save()
-            context = {'post': post, 'subrabble': subrabble}
-            return redirect(request, "rabble/post_detail.html", context)
+            return redirect('post-detail', identifier=subrabble.subrabble_name, pk=post.pk)
     else:
         form = PostForm(instance=post)
     
