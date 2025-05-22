@@ -64,3 +64,13 @@ I generally followed the course Registrar example code for creating factories an
 -  Specifying the correct arguments for the `reverse()` function, specifically for calls like `response = client.get(reverse("subrabble-detail", args=[subrabble.subrabble_name]))`
 Generally, I used it to  help troubleshoot specific implementation issues and understand Django testing concepts better.
 
+**AFTER HOMEWORK 5 RESUBMISSION
+I asked CoPilot on how to go about involving the setting up of a test environment
+for the CI tests, since the run_test task was failing when trying to detect 
+the google cloud environment (since I was doing this resubmission after having
+completed homework 6). 
+
+HOMEWORK #6:
+I generally relied on the AI from the Google Cloud logs to explain the logging
+errors I was experiencing. Otherwise, setting up and deploying the app was a
+fairly straightforward process. 

@@ -51,3 +51,22 @@ Additionally, I implemented the extra task to limit actions by user:
 - Only the author of a post can edit it, and only they see the Edit post button
 
 I sincerely apologize for the submission error and thank you for considering my resubmission. The work was completed on time, and I am now ensuring it is properly submitted through the resubmission process.
+
+
+
+## Resubmission for Homework #5 
+
+Since I completed all the normal requirements for Homework #5, I focused on implementing the extra tasks to enhance the application functionality. I am resubmitting to address any feedback received and to demonstrate the additional work completed beyond the base requirements.
+
+## Resubmission for Homework #6
+
+I was unable to complete the deployment by the original deadline due to persistent database configuration issues. I encountered continuous "database is locked" warnings that prevented successful deployment:
+
+WARNING: Could not store access token in cache: database is locked
+WARNING: Could not store access token in cache: database is locked
+WARNING: Could not store access token in cache: database is locked
+WARNING: Could not store access token in cache: database is locked
+WARNING: Could not store access token in cache: database is locked
+
+These database locking issues significantly hindered my ability to properly set up and deploy the application within the deadline timeframe, though these issues have 
+been addressed in this submission. 
