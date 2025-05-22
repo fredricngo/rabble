@@ -58,7 +58,7 @@ from AI, then asked CoPilot for some help on what views I should use when implem
 the last two endpoints.
 
 HOMEWORK #5:
-I generally followed the course Registrar example code for creating factories and tests, but consulted AI for specific implementation details:
+I generally followed the course Registrar example code for creating factories and tests, but consuled AI for specific implementation details:
  - Where to properly place the `force_login` details to support the extra authentication tasks I implemented in HW #3
 - Debugging issues with accessing and asserting IDs due to how my serializers were defined
 -  Specifying the correct arguments for the `reverse()` function, specifically for calls like `response = client.get(reverse("subrabble-detail", args=[subrabble.subrabble_name]))`
