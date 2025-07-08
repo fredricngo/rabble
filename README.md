@@ -1,3 +1,3 @@
-# CMSC 22000 Homework
+#Personal Rabble Website
 
-Fredric Ngo (fredricngo)
+
